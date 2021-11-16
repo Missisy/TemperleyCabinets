@@ -1,0 +1,547 @@
+@import url(colores.scss);
+
+@media (min-width:1024px){
+    * {
+        margin: 0%; }
+    
+    body {
+        background-color: mintcream;
+        font-family: 'Domine', serif; 
+    }
+    
+    .grids {
+        display: grid;
+        grid-template-areas: 
+        " header header header"
+        " main main main "
+        " main main main "
+        " footer footer footer";
+        grid-template-rows: 130px 1fr 2fr 300px;
+        grid-template-columns: 30px 2fr 100px;
+        align-items: stretch;
+        justify-content: stretch;
+        margin: 0%;
+        height: 750vh;
+        background-color: $blanco; 
+    }
+
+    
+    header {
+        padding-bottom: 3%;
+        text-align: justify;
+        position: sticky;
+        top: 0;
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: linear-gradient($azul, #78bfc8); 
+    
+        .logoArriba {
+            position: absolute;
+            left: 16px;
+            top: 9px; 
+            height: 100px;
+            width: 200px; 
+        }
+    
+    }
+        
+    main {
+        grid-area: main; 
+
+        h1{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color:$azul ;
+        }
+    
+        aside{
+            padding-bottom: 10px;
+            margin-left:80% ;
+            width: 150px;
+            height: 24px;
+        }
+        button{
+            background-color: $blanco;
+            color: $blanco;
+            margin-left: 91%;
+        }
+
+    }
+        
+    footer {
+        background-image: linear-gradient(#78bfc8, $azul);
+        text-align: center;
+        color: $blanco;
+        grid-area: footer;
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+
+        .piePagina {
+            text-align: left;
+            flex: 2px;
+            width: 100px;
+            height: 240px;
+            margin: 30px 40px 20px 20px;
+            flex-basis: 10%; 
+            text-decoration: none;
+        } 
+        
+        ul li{
+            display: block;
+            color: $blanco;
+            margin: 10px 0 10px 0;}
+        
+        ul a{
+           text-decoration: none;} 
+    }
+
+    nav {
+    grid-area: nav;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 72px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0; }
+            ul li {
+            float: left;
+            margin: 10px; }
+            ul li a {
+                display: inline-block;
+                color: $blanco;
+                text-decoration: none; }
+        a {
+            text-decoration: none; }
+    }
+
+    div a {
+    color: $blanco; }
+
+    section {
+        
+        div {
+            margin: 20px 20px 20px 20px;
+            text-align: left;
+        }
+        .hsEstilos {
+            background-color: $azul;
+            color: $blanco;
+            text-align: center;
+            font-family: 'Domine', serif;
+            margin: 3% 40% 3% 40%;
+            text-align: center;
+            padding: 7px;
+            display: flex;
+            flex-flow: column;
+        }
+    
+        .productos {
+            margin: 3% 19% 0 19%;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size:20px ; 
+        }
+    }
+
+    .cartas{
+        width: 1309px;
+        height: 650px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .cardi{
+        
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 1023px){
+ 
+    * {
+        margin: 0%; 
+    }
+    
+    body {
+        background-color: mintcream;
+        font-family: 'Domine', serif; 
+    }
+    
+    .grids {
+        display: grid;
+        grid-template-areas: 
+        " header header header"
+        " main main main "
+        " main main main "
+        " footer footer footer";
+        grid-template-rows: 190px 1fr 2fr 400px;
+        grid-template-columns: 0px 1023px 0px;
+        align-items: stretch;
+        justify-content: stretch;
+        margin: 0%;
+        height: 370vh;
+        background-color: $blanco; 
+    }
+
+    header {
+        padding-bottom: 3%;
+        text-align: justify;
+        position: sticky;
+        top: 0;
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: linear-gradient($azul, #78bfc8);
+    
+        .logoArriba {
+            position: absolute;
+            left: 16px;
+            top: 9px; 
+            height: 100px;
+            width: 200px; 
+        }
+    
+    }
+        
+    main {
+        grid-area: main; 
+    
+        h1{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color:$azul ;
+        }
+
+        aside{
+            padding-bottom: 10px;
+            margin-left:80% ;
+            width: 150px;
+            height: 24px;
+        }
+        button{
+            background-color: $blanco;
+            color: $blanco;
+            margin-left: 91%;
+        }
+    
+    }
+        
+    footer {
+        background-image: linear-gradient(#78bfc8, $azul);
+        text-align: center;
+        color: $blanco;
+        grid-area: footer;
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+
+        .piePagina {
+            text-align: left;
+            flex: 2px;
+            width: 100px;
+            height: 240px;
+            margin: 30px 40px 20px 20px;
+            flex-basis: 10%; 
+            text-decoration: none;
+        } 
+        
+        ul li{
+            display: block;
+            color: $blanco;
+            margin: 10px 0 10px 0;}
+        
+        ul a{
+            text-decoration: none;}
+    }
+
+    nav {
+    grid-area: nav;
+    margin-left: 10%;
+    margin-right: 0%;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+    width: 500px;
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0; }
+            ul li {
+            float: left;
+            margin: 10px; }
+            ul li a {
+                display: inline-block;
+                color: $blanco;
+                text-decoration: none; }
+        a {
+            text-decoration: none; }
+    }
+
+    div a {
+    color: $blanco; }
+    
+    section {
+        
+        div {
+            margin: 20px 20px 20px 20px;
+            text-align: left;
+        }
+
+        .hsEstilos {
+            background-color: $azul;
+            color: $blanco;
+            text-align: center;
+            font-family: 'Domine', serif;
+            margin: 3% 40% 3% 40%;
+            text-align: center;
+            padding: 7px;
+            display: flex;
+            flex-flow: column; 
+        }
+    
+        .productos {
+            margin: 3% 10% 0 15%;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size:20px ; 
+            width: 700px;
+        }
+        
+    }
+
+    .cartas{
+        width: 1009px;
+        height: 650px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .cardi{
+        
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+    }
+    
+}
+
+@media (max-width: 599px ){
+    * {
+        margin: 0%; 
+    }
+    
+    body {
+        background-color: mintcream;
+        font-family: 'Domine', serif; 
+        width: 599px;
+    }
+    
+    .grids{
+        display: grid;
+        grid-template-areas: 
+        " header header header"
+        " main main main "
+        " main main main "
+        " footer footer footer";
+        grid-template-rows: 300px 1fr 2fr 700px;
+        grid-template-columns: 0px 599px 0px;
+        align-items: stretch;
+        justify-content: stretch;
+        margin: 0%;
+        height: 650vh;
+        background-color: $blanco; 
+    }
+
+    
+    header {
+        padding-bottom: 3%;
+        text-align: justify;
+        position: sticky;
+        top: 0;
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: linear-gradient($azul, #78bfc8); 
+    
+        .logoArriba {
+            position: absolute;
+            left: 40px;
+            top: 9px; 
+            height: 100px;
+            width: 200px; }
+    
+    }
+        
+    main {
+        grid-area: main; 
+
+        h1{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color:$azul ;
+        }
+    
+        aside{
+            padding-bottom: 10px;
+            margin-left:65% ;
+            width: 150px;
+            height: 24px;
+        }
+        button{
+            background-color: $blanco;
+            color: $blanco;
+            margin-left: 91%;
+        }
+
+        
+    
+    }
+        
+    footer {
+        background-image: linear-gradient(#78bfc8, $azul);
+        text-align: center;
+        color: $blanco;
+        grid-area: footer;
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+
+        .piePagina {
+            text-align: left;
+            flex: 2px;
+            width: 160px;
+            height: 240px;
+            margin: 30px 30px 20px 20px;
+            flex-basis: 10%; 
+            text-decoration: none;}  
+        
+        ul li{
+            display: block;
+            color: $blanco;
+            margin: 10px 100px 10px 0;}
+        
+        ul a{
+            text-decoration: none;}
+    }
+
+    nav {
+    grid-area: nav;
+    margin-left: 10%;
+    margin-right: 0%;
+    margin-top: 10%;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+    width: 500px;
+
+
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0; }
+            ul li {
+            float: left;
+            margin: 10px; }
+            ul li a {
+                display: inline-block;
+                color: $blanco;
+                text-decoration: none; }
+        a {
+            text-decoration: none; }
+    }
+
+    div a {
+    color: $blanco; }
+ 
+    
+    section {
+        
+        div {
+            margin: 20px 20px 20px 20px;
+            text-align: left;
+        }
+
+        .productos {
+            margin: 3% 10% 0 12%;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size:16px ; 
+            width: 500px;
+        }
+
+        .hsEstilos {
+            background-color: $azul;
+            color: honeydew;
+            text-align: center;
+            font-family: 'Domine', serif;
+            margin: 3% 40% 3% 35%;
+            text-align: center;
+            padding: 7px;
+            display: flex;
+            flex-flow: column; 
+        }
+        
+    }
+
+    .cartas{
+        width: 599px;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .cardi{
+        
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+    }
+    
+}

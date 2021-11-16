@@ -1,0 +1,642 @@
+@import url(colores.scss);
+
+/* Desktop */
+@media (min-width:1024px){
+    * {
+    margin: 0%;}
+   
+    body {
+     background-color: mintcream;
+     font-family: 'Domine', serif; 
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+    }
+ 
+    .grids {
+     display: grid;
+     grid-template-areas: 
+     " header header header"
+     " main main main "
+     " footer footer footer";
+     grid-template-rows: 130px 4fr 300px;
+     grid-template-columns: 30px 2fr 100px;
+     align-items: stretch;
+     justify-content: stretch;
+     margin: 0%;
+     height: 400vh;
+     background-color: $blanco;
+    }
+ 
+    header {
+     padding-bottom: 3%;
+     text-align: justify;
+     position: sticky;
+     top: 0;
+     grid-area: header;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     background-image: linear-gradient(#5f88a0, #78bfc8); 
+    
+     .logoArriba {
+        position: absolute;
+        left: 16px;
+        top: 9px; 
+        height: 100px;
+        width: 200px;} 
+    
+    }
+ 
+    main {
+     grid-area: main;
+
+        h1{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color: $azul ;
+        }
+
+        aside{
+            padding-bottom: 10px;
+            margin-left:80% ;
+            width: 150px;
+            height: 24px;
+        }
+            
+        button{
+            background-color: $blanco;
+            color: $blanco;
+            margin-left: 91%;
+        }
+ 
+    }
+ 
+    footer {
+     background-image: linear-gradient(#78bfc8,$azul);
+     text-align: center;
+     color: $blanco;
+     grid-area: footer;
+     display: flex;
+     flex-wrap: wrap;
+     text-decoration: none;
+
+     .piePagina {
+        text-align: left;
+        flex: 2px;
+        width: 100px;
+        height: 240px;
+        margin: 30px 40px 20px 20px;
+        flex-basis: 10%; 
+        text-decoration: none;}
+ 
+        ul li{
+        display: block;
+        color: $blanco;
+        margin: 10px 0 10px 0;}
+    
+        ul a{
+        text-decoration: none;}
+    }
+ 
+    nav {
+     grid-area: nav;
+     margin-left: 28%;
+     margin-right: 28%;
+     padding-left: 40px;
+     padding-right: 40px;
+     padding-top: 72px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center; 
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0; }
+            ul li {
+            float: left;
+            margin: 10px; }
+                ul li a {
+                display: inline-block;
+                color: $blanco;
+                text-decoration: none; }
+        a {
+        text-decoration: none; }
+    }
+ 
+    section{
+
+        #carrito {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center; 
+        }
+
+        .productos {
+            margin: 3% 19% 0 19%;
+            text-align: justify;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size:20px ; 
+        }
+
+
+        .hsEstilos {
+            background-color:$azul;
+            color: $blanco;
+            text-align: center;
+            font-family: 'Domine', serif;
+            margin: 3% 40% 3% 40%;
+            text-align: center;
+            padding: 7px;
+            display: flex;
+            flex-flow: column; 
+        }
+
+        div{
+            margin: 20px 0 20px 0;
+        }
+
+        div button{
+            margin: 0 20px 20px 20px;
+        }
+    }
+
+    div a {
+     color: $blanco; 
+    }
+     
+    ul{
+         padding: 0%;
+    }
+
+    .seccionProduc{
+     display: flex;
+    }
+ 
+    .cartas{
+     width: 1309px;
+     height: 650px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items: center;
+    }
+ 
+    .cardi{
+     
+     min-width: 0;
+     word-wrap: break-word;
+     background-color: #fff;
+     background-clip: border-box;
+     border: 1px solid rgba(0,0,0,.125);
+     border-radius: .25rem;
+    }
+ 
+    .btn-groupi{
+     display: inline-flex;
+     vertical-align: middle;
+    }
+ 
+    .botonesGrup{
+     width: 360px;
+     height: 175px;
+    }
+ 
+}
+ 
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px){
+
+
+
+* {
+    margin: 0%;}
+
+body {
+    background-color: mintcream;
+    font-family: 'Domine', serif; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    }
+
+.grids {
+    display: grid;
+    grid-template-areas: 
+    " header header header"
+    " main main main "
+    " footer footer footer";
+    grid-template-rows: 170px 4fr 340px;
+    grid-template-columns: 0px 1023px 0px;
+    align-items: stretch;
+    justify-content: stretch;
+    margin: 0%;
+    height: 500vh;
+    background-color: $blanco; }
+
+
+header {
+    padding-bottom: 3%;
+    text-align: justify;
+    position: sticky;
+    top: 0;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient($azul, #78bfc8); 
+
+    .logoArriba {
+        position: absolute;
+        left: 16px;
+        top: 9px; 
+        height: 100px;
+        width: 200px;
+    }
+
+}
+
+main {
+    grid-area: main;
+
+    h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: $azul ;
+    }
+
+    aside{
+        padding-bottom: 10px;
+        margin-left:70% ;
+        width: 150px;
+        height: 24px;
+    }
+    button{
+        background-color: $blanco;
+        color: $blanco;
+        margin-left: 91%;
+    }
+
+}
+
+footer {
+    background-image: linear-gradient(#78bfc8,$azul);
+    text-align: center;
+    color: $blanco;
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+
+    .piePagina {
+        text-align: left;
+        flex: 2px;
+        width: 100px;
+        height: 240px;
+        margin: 30px 40px 20px 20px;
+        flex-basis: 10%; 
+        text-decoration: none;
+    }
+
+    ul li{
+        display: block;
+        color: $blanco;
+        margin: 10px 0 10px 0;}
+
+    ul a{
+        text-decoration: none;}
+}
+
+nav {
+    margin-left: 28%;
+    margin-right: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 72px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+   ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0; }
+       ul li {
+        float: left;
+        margin: 10px; }
+           ul li a {
+            display: inline-block;
+            color: $blanco;
+            text-decoration: none; }
+   a {
+        text-decoration: none; }
+}
+
+section{
+
+    .hsEstilos {
+        background-color:$azul;
+        color: $blanco;
+        text-align: center;
+        font-family: 'Domine', serif;
+        margin: 3% 40% 1% 35%;
+        text-align: center;
+        padding: 7px;
+        display: flex;
+        flex-flow: column; 
+    }
+    
+    
+    
+    .productos {
+        margin: 3% 19% 0 19%;
+        text-align: justify;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size:20px ; 
+    }
+    
+    #carrito {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center; 
+    }
+
+    div{
+        margin: 20px 0 20px 0;
+    }
+
+    div button{
+        margin: 0px 20px 20px 20px;
+    }
+
+}
+
+.seccionProduc{
+    display: flex;
+}
+
+.cartas{
+    width: 709px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardi{
+        
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn-groupi{
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.botonesGrup{
+    width: 400px;
+    height: 275px;
+    margin-right: 30%;
+    margin-left: 25%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+}
+ 
+/* Mobile */
+@media (max-width: 599px ){
+ 
+    * {
+        margin: 0%;}
+     
+    body {
+         background-color: mintcream;
+         font-family: 'Domine', serif; 
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         width: 599px;
+        }
+     
+    .grids {
+         display: grid;
+         grid-template-areas: 
+         " header header header"
+         " main main main "
+         " footer footer footer";
+         grid-template-rows: 200px 4fr 720px;
+         grid-template-columns: 0px 599px 0px;
+         align-items: stretch;
+         justify-content: stretch;
+         margin: 0%;
+         height: 530vh;
+         background-color: $blanco; }
+
+
+    header {
+        width: 585px;
+        padding-bottom: 0;
+        text-align: justify;
+        position: sticky;
+        top: 0;
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: linear-gradient($azul, #78bfc8); 
+        
+        img{
+            position: absolute;
+            left: 16px;
+            top: 9px; 
+            height: 100px;
+            width: 200px;
+
+        }
+        
+    }
+     
+    main {
+        grid-area: main;
+        width: 596px;
+
+        h1{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color: $azul ;
+        }
+
+        aside{
+            padding-bottom: 10px;
+            margin-left:65% ;
+            width: 150px;
+            height: 24px;
+        }
+        button{
+            background-color: $blanco;
+            color: $blanco;
+            margin-left: 91%;
+        }
+    }
+     
+    footer {
+        background-image: linear-gradient(#78bfc8,$azul);
+        text-align: center;
+        color: $blanco;
+        grid-area: footer;
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        width: 580px;
+        height:600 ;
+
+        div{
+
+            text-align: left;
+            flex: 2px;
+            width: 100px;
+            height: 240px;
+            margin: 30px 150px 80px 20px;
+            flex-basis: 10%; 
+            text-decoration: none;}
+     
+            ul li{
+                display: block;
+                color: $blanco;
+                margin: 10px 0 10px 0;}
+     
+            ul a{
+                text-decoration: none;}
+    }
+     
+ 
+    nav {
+         margin-left: 0%;
+         margin-right: 10%;
+         padding-left: 20px;
+         padding-right: 20px;
+         padding-top: 120px;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         align-items: center; 
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0; }
+            ul li {
+                float: left;
+                margin: 10px; }
+                ul li a {
+                    display: inline-block;
+                    color: $blanco;
+                    text-decoration: none; }
+        a {
+            text-decoration: none; }
+    }
+    
+    section{
+
+        .hsEstilos {
+            background-color:$azul;
+            color: $blanco;
+            text-align: center;
+            font-family: 'Domine', serif;
+            margin: 3% 40% 1% 40%;
+            text-align: center;
+            padding: 7px;
+            display: flex;
+            flex-flow: column; }
+
+        .productos {
+            margin: 3% 19% 0 9%;
+            text-align: justify;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size:17px ; 
+            text-align: center;
+            width: 450px;}
+
+        #carrito {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 596px; }
+
+        div{
+            margin: 20px 0 20px 0;
+        }
+
+
+    }
+
+
+    .cartas{
+        width: 589px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+     
+    .cardi{
+             
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        display: inline-block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+     
+    .btn-groupi{
+        display: inline-flex;
+        vertical-align: middle;
+    }
+     
+    .botonesGrup{
+        width: 280px;
+        height: 275px;
+        margin-right: 10%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+ 
+ 
+}

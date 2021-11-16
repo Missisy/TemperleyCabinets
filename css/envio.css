@@ -1,18 +1,12 @@
-@media (min-width:1024px){
+@media (min-width: 1024px) {
   * {
     margin: 0%; }
-
   body {
     background-color: mintcream;
     font-family: 'Domine', serif; }
-
   .grids {
     display: grid;
-    grid-template-areas: 
-    " header header header"
-    " main main main "
-    " main main main "
-    " footer footer footer";
+    grid-template-areas: " header header header" " main main main " " main main main " " footer footer footer";
     grid-template-rows: 130px 1fr 2fr 300px;
     grid-template-columns: 30px 2fr 100px;
     align-items: stretch;
@@ -20,51 +14,6 @@
     margin: 0%;
     height: 280vh;
     background-color: honeydew; }
-
-  .mayusculaContactos {
-    text-transform: capitalize; }
-
-  .logoArriba {
-    position: absolute;
-    left: 16px;
-    top: 9px; 
-    height: 100px;
-    width: 200px; ;}
-
-  .hsEstilos {
-    background-color: #5f88a0;
-    color: honeydew;
-    text-align: center;
-    font-family: 'Domine', serif;
-    margin: 3% 40% 3% 40%;
-    text-align: center;
-    padding: 7px;
-    display: flex;
-    flex-flow: column; }
-
-  .estilosEnvio {
-    background-color: #5f88a0;
-    color: honeydew;
-    text-align: center;
-    padding: 7px;
-    margin: 0 40% 0 40%; }
-
-  .otroLista {
-    list-style: disc; }
-
-  .imgHistoria {
-    padding: 15px;
-    float: right; }
-
-  .piePagina {
-    text-align: left;
-    flex: 2px;
-    width: 100px;
-    height: 240px;
-    margin: 30px 40px 20px 20px;
-    flex-basis: 10%; 
-    text-decoration: none;}
-
   .escala {
     transition: all 1s ease-in-out;
     display: flex;
@@ -73,75 +22,8 @@
     justify-content: space-evenly;
     margin: 0;
     height: 250px; }
-
   .escala:hover {
     transform: scale(1.3, 1.3); }
-
-  .pagoEnvio {
-    margin: 20px;
-    line-height: 30px;
-    flex: 2%;
-    text-align: left; }
-
-  .productos {
-    margin: 3% 19% 0 19%;
-    text-align: justify;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size:20px ; }
-
-  #carrito {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center; }
-
-  img.linkeada {
-    margin-left: 40%;
-    margin-right: 50%;
-    width: 210px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap; }
-
-  li.subMenu {
-    padding-top: 8px;
-    padding-bottom: 8px; }
-
-  p.productos {
-    text-align: center; }
-
-  li.carrito {
-    display: inline;
-    padding: 33px; }
-
-  ol.footer {
-    padding: 10px;
-    margin-left: 10px; }
-
-  p.productos {
-    text-align: center; }
-
-  ul h4 {
-    margin: 0 0 20px 0; }
-
-  h3.index {
-    background-color: #5f88a0;
-    color: honeydew;
-    text-align: center;
-    padding: 7px;
-    margin: 0 73% 0 2.7%; }
-
-  div.colorFondo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-shrink: initial;
-    height: 250px;
-    margin-right: 5%; }
-
   header {
     padding-bottom: 3%;
     text-align: justify;
@@ -152,10 +34,56 @@
     flex-direction: column;
     flex-wrap: wrap;
     background-image: linear-gradient(#5f88a0, #78bfc8); }
-
+    header .logoArriba {
+      position: absolute;
+      left: 16px;
+      top: 9px;
+      height: 100px;
+      width: 200px; }
   main {
     grid-area: main; }
-
+    main .hsEstilos {
+      background-color: #5f88a0;
+      color: honeydew;
+      text-align: center;
+      font-family: 'Domine', serif;
+      margin: 3% 40% 3% 40%;
+      text-align: center;
+      padding: 7px;
+      display: flex;
+      flex-flow: column; }
+    main .estilosEnvio {
+      background-color: #5f88a0;
+      color: honeydew;
+      text-align: center;
+      padding: 7px;
+      margin: 0 40% 0 40%; }
+    main .pagoEnvio {
+      margin: 20px;
+      line-height: 30px;
+      flex: 2%;
+      text-align: left; }
+    main .productos {
+      margin: 3% 19% 0 19%;
+      text-align: justify;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      font-size: 20px; }
+    main h1 {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      color: #5f88a0; }
+    main aside {
+      padding-bottom: 25px;
+      margin-left: 80%;
+      width: 150px;
+      height: 0px; }
+    main button {
+      background-color: honeydew;
+      color: honeydew;
+      margin-left: 91%; }
   footer {
     background-image: linear-gradient(#78bfc8, #5f88a0);
     text-align: center;
@@ -163,42 +91,21 @@
     grid-area: footer;
     display: flex;
     flex-wrap: wrap;
-    text-decoration: none;}
-
-  footer ul li{
-    display: block;
-    color: honeydew;
-    margin: 10px 0 10px 0;}
-
-  footer ul a{
-    text-decoration: none;}
-
-  section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
-    section div {
+    text-decoration: none; }
+    footer .piePagina {
       text-align: left;
-      margin-bottom: 10%;
-      margin-left: 10%;
       flex: 2px;
-      width: 200px;
-      height: 120px;
-      padding-top: 10px;
-      flex-basis: 10%; }
-    section img {
-      width: 200px;
-      height: 200px;
-      margin: 20px 20px 20px 20px; }
-    section form {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: left;
-      margin-right: 87%;
-      margin-left: 5px; }
-
+      width: 100px;
+      height: 240px;
+      margin: 30px 40px 20px 20px;
+      flex-basis: 10%;
+      text-decoration: none; }
+    footer ul li {
+      display: block;
+      color: honeydew;
+      margin: 10px 0 10px 0; }
+    footer ul a {
+      text-decoration: none; }
   nav {
     grid-area: nav;
     margin-left: 10%;
@@ -214,70 +121,32 @@
       list-style-type: none;
       overflow: hidden;
       padding: 0; }
-      nav ul li {
-        float: left;
-        margin: 10px; }
-        nav ul li a {
-          display: inline-block;
-          color: honeydew;
-          text-decoration: none; }
+    nav ul li {
+      float: left;
+      margin: 10px; }
+    nav ul li a {
+      display: inline-block;
+      color: honeydew;
+      text-decoration: none; }
     nav a {
       text-decoration: none; }
-
-  div iframe {
-    margin: 10px 10px 10px 38px;
-    width: 325px;
-    height: 250px; }
-
   div a {
     color: honeydew; }
+  .seccionProduc {
+    display: flex; }
+  .dropdowni {
+    width: 10px;
+    margin-right: 290px; } }
 
-  p {
-    font-size: 15px;
-    margin: 10px 0 10px;
-    line-height: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left; }
-
-  aside{
-  padding-bottom: 25px;
-  margin-left:80% ;
-  width: 150px;
-  height: 0px;
-  }
-  button{
-  background-color: honeydew;
-  color: honeydew;
-  margin-left: 91%;
-  }
-  .seccionProduc{
-      display: flex;
-
-  }
-  .dropdowni{
-      width: 10px;
-      margin-right: 290px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 1023px){
-
-
+@media (min-width: 600px) and (max-width: 1023px) {
   * {
     margin: 0%; }
-
   body {
     background-color: mintcream;
     font-family: 'Domine', serif; }
-
   .grids {
     display: grid;
-    grid-template-areas: 
-    " header header header"
-    " main main main "
-    " main main main "
-    " footer footer footer";
+    grid-template-areas: " header header header" " main main main " " main main main " " footer footer footer";
     grid-template-rows: 130px 1fr 2fr 400px;
     grid-template-columns: 30px 2fr 100px;
     align-items: stretch;
@@ -285,51 +154,6 @@
     margin: 0%;
     height: 150vh;
     background-color: honeydew; }
-
-  .mayusculaContactos {
-    text-transform: capitalize; }
-
-  .logoArriba {
-    position: absolute;
-    left: 16px;
-    top: 9px; 
-    height: 100px;
-    width: 200px; ;}
-
-  .hsEstilos {
-    background-color: #5f88a0;
-    color: honeydew;
-    text-align: center;
-    font-family: 'Domine', serif;
-    margin: 3% 40% 3% 40%;
-    text-align: center;
-    padding: 7px;
-    display: flex;
-    flex-flow: column; }
-
-  .estilosEnvio {
-    background-color: #5f88a0;
-    color: honeydew;
-    text-align: center;
-    padding: 7px;
-    margin: 0 40% 0 40%; }
-
-  .otroLista {
-    list-style: disc; }
-
-  .imgHistoria {
-    padding: 15px;
-    float: right; }
-
-  .piePagina {
-    text-align: left;
-    flex: 2px;
-    width: 100px;
-    height: 240px;
-    margin: 30px 40px 20px 20px;
-    flex-basis: 10%; 
-    text-decoration: none;}
-
   .escala {
     transition: all 1s ease-in-out;
     display: flex;
@@ -338,75 +162,8 @@
     justify-content: space-evenly;
     margin: 0;
     height: 250px; }
-
   .escala:hover {
     transform: scale(1.3, 1.3); }
-
-  .pagoEnvio {
-    margin: 20px;
-    line-height: 30px;
-    flex: 2%;
-    text-align: left; }
-
-  .productos {
-    margin: 3% 19% 0 19%;
-    text-align: justify;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size:20px ; }
-
-  #carrito {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center; }
-
-  img.linkeada {
-    margin-left: 40%;
-    margin-right: 50%;
-    width: 210px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap; }
-
-  li.subMenu {
-    padding-top: 8px;
-    padding-bottom: 8px; }
-
-  p.productos {
-    text-align: center; }
-
-  li.carrito {
-    display: inline;
-    padding: 33px; }
-
-  ol.footer {
-    padding: 10px;
-    margin-left: 10px; }
-
-  p.productos {
-    text-align: center; }
-
-  ul h4 {
-    margin: 0 0 20px 0; }
-
-  h3.index {
-    background-color: #5f88a0;
-    color: honeydew;
-    text-align: center;
-    padding: 7px;
-    margin: 0 73% 0 2.7%; }
-
-  div.colorFondo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-shrink: initial;
-    height: 250px;
-    margin-right: 5%; }
-
   header {
     padding-bottom: 3%;
     text-align: justify;
@@ -417,10 +174,56 @@
     flex-direction: column;
     flex-wrap: wrap;
     background-image: linear-gradient(#5f88a0, #78bfc8); }
-
+    header .logoArriba {
+      position: absolute;
+      left: 16px;
+      top: 9px;
+      height: 100px;
+      width: 200px; }
   main {
     grid-area: main; }
-
+    main .hsEstilos {
+      background-color: #5f88a0;
+      color: honeydew;
+      text-align: center;
+      font-family: 'Domine', serif;
+      margin: 3% 40% 3% 40%;
+      text-align: center;
+      padding: 7px;
+      display: flex;
+      flex-flow: column; }
+    main .estilosEnvio {
+      background-color: #5f88a0;
+      color: honeydew;
+      text-align: center;
+      padding: 7px;
+      margin: 0 40% 0 40%; }
+    main .pagoEnvio {
+      margin: 20px;
+      line-height: 30px;
+      flex: 2%;
+      text-align: left; }
+    main .productos {
+      margin: 3% 19% 0 19%;
+      text-align: justify;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      font-size: 20px; }
+    main h1 {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      color: #5f88a0; }
+    main aside {
+      padding-bottom: 10px;
+      margin-left: 75%;
+      width: 150px;
+      height: 0px; }
+    main button {
+      background-color: honeydew;
+      color: honeydew;
+      margin-left: 91%; }
   footer {
     background-image: linear-gradient(#78bfc8, #5f88a0);
     text-align: center;
@@ -428,42 +231,21 @@
     grid-area: footer;
     display: flex;
     flex-wrap: wrap;
-    text-decoration: none;}
-
-  footer ul li{
-    display: block;
-    color: honeydew;
-    margin: 10px 0 10px 0;}
-
-  footer ul a{
-    text-decoration: none;}
-
-  section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
-    section div {
+    text-decoration: none; }
+    footer .piePagina {
       text-align: left;
-      margin-bottom: 10%;
-      margin-left: 10%;
       flex: 2px;
-      width: 200px;
-      height: 120px;
-      padding-top: 10px;
-      flex-basis: 10%; }
-    section img {
-      width: 200px;
-      height: 200px;
-      margin: 20px 20px 20px 20px; }
-    section form {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: left;
-      margin-right: 87%;
-      margin-left: 5px; }
-
+      width: 100px;
+      height: 240px;
+      margin: 30px 40px 20px 20px;
+      flex-basis: 10%;
+      text-decoration: none; }
+    footer ul li {
+      display: block;
+      color: honeydew;
+      margin: 10px 0 10px 0; }
+    footer ul a {
+      text-decoration: none; }
   nav {
     grid-area: nav;
     margin-left: 28%;
@@ -479,71 +261,32 @@
       list-style-type: none;
       overflow: hidden;
       padding: 0; }
-      nav ul li {
-        float: left;
-        margin: 10px; }
-        nav ul li a {
-          display: inline-block;
-          color: honeydew;
-          text-decoration: none; }
+    nav ul li {
+      float: left;
+      margin: 10px; }
+    nav ul li a {
+      display: inline-block;
+      color: honeydew;
+      text-decoration: none; }
     nav a {
       text-decoration: none; }
-
-  div iframe {
-    margin: 10px 10px 10px 38px;
-    width: 325px;
-    height: 250px; }
-
   div a {
     color: honeydew; }
-
-  p {
-    font-size: 15px;
-    margin: 10px 0 10px;
-    line-height: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left; }
-
-  aside{
-    padding-bottom: 10px;
-    margin-left:75% ;
-    width: 150px;
-    height: 0px;
-  }
-  button{
-    background-color: honeydew;
-    color: honeydew;
-    margin-left: 91%;
-  }
-
-  .seccionProduc{
-    display: flex;
-  }
-
-  .dropdowni{
+  .seccionProduc {
+    display: flex; }
+  .dropdowni {
     width: 10px;
-    margin-right: 290px;
-  }
-  
-  }
-  
-@media (max-width: 599px ){
-  
+    margin-right: 290px; } }
+
+@media (max-width: 599px) {
   * {
     margin: 0%; }
-
   body {
     background-color: mintcream;
     font-family: 'Domine', serif; }
-
   .grids {
     display: grid;
-    grid-template-areas: 
-    " header header header"
-    " main main main "
-    " main main main "
-    " footer footer footer";
+    grid-template-areas: " header header header" " main main main " " main main main " " footer footer footer";
     grid-template-rows: 230px 1fr 2fr 750px;
     grid-template-columns: 30px 2fr 100px;
     align-items: stretch;
@@ -551,51 +294,6 @@
     margin: 0%;
     height: 230vh;
     background-color: honeydew; }
-
-  .mayusculaContactos {
-    text-transform: capitalize; }
-
-  .logoArriba {
-    position: absolute;
-    left: 16px;
-    top: 9px; 
-    height: 100px;
-    width: 200px; ;}
-
-  .hsEstilos {
-    background-color: #5f88a0;
-    color: honeydew;
-    text-align: center;
-    font-family: 'Domine', serif;
-    margin: 3% 40% 3% 40%;
-    text-align: center;
-    padding: 7px;
-    display: flex;
-    flex-flow: column; }
-
-  .estilosEnvio {
-    background-color: #5f88a0;
-    color: honeydew;
-    text-align: center;
-    padding: 7px;
-    margin: 0 40% 0 40%; }
-
-  .otroLista {
-    list-style: disc; }
-
-  .imgHistoria {
-    padding: 15px;
-    float: right; }
-
-  .piePagina {
-    text-align: left;
-    flex: 2px;
-    width: 200px;
-    height: 240px;
-    margin: 30px 40px 20px 20px;
-    flex-basis: 10%; 
-    text-decoration: none;}
-
   .escala {
     transition: all 1s ease-in-out;
     display: flex;
@@ -604,75 +302,8 @@
     justify-content: space-evenly;
     margin: 0;
     height: 250px; }
-
   .escala:hover {
     transform: scale(1.3, 1.3); }
-
-  .pagoEnvio {
-    margin: 20px;
-    line-height: 30px;
-    flex: 2%;
-    text-align: left; }
-
-  .productos {
-    margin: 3% 19% 0 19%;
-    text-align: justify;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size:20px ; }
-
-  #carrito {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center; }
-
-  img.linkeada {
-    margin-left: 40%;
-    margin-right: 50%;
-    width: 210px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap; }
-
-  li.subMenu {
-    padding-top: 8px;
-    padding-bottom: 8px; }
-
-  p.productos {
-    text-align: center; }
-
-  li.carrito {
-    display: inline;
-    padding: 33px; }
-
-  ol.footer {
-    padding: 10px;
-    margin-left: 10px; }
-
-  p.productos {
-    text-align: center; }
-
-  ul h4 {
-    margin: 0 0 20px 0; }
-
-  h3.index {
-    background-color: #5f88a0;
-    color: honeydew;
-    text-align: center;
-    padding: 7px;
-    margin: 0 73% 0 2.7%; }
-
-  div.colorFondo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-shrink: initial;
-    height: 250px;
-    margin-right: 5%; }
-
   header {
     padding-bottom: 3%;
     text-align: justify;
@@ -683,33 +314,36 @@
     flex-direction: column;
     flex-wrap: wrap;
     background-image: linear-gradient(#5f88a0, #78bfc8); }
-
+    header .logoArriba {
+      position: absolute;
+      left: 16px;
+      top: 9px;
+      height: 100px;
+      width: 200px; }
   main {
     grid-area: main; }
-
-  footer {
-    background-image: linear-gradient(#78bfc8, #5f88a0);
-    text-align: center;
-    color: honeydew;
-    grid-area: footer;
-    display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;}
-
-  footer ul li{
-    display: block;
-    color: honeydew;
-    margin: 10px 0 10px 0;}
-
-  footer ul a{
-    text-decoration: none;}
-
-  section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
-    section div {
+    main .hsEstilos {
+      background-color: #5f88a0;
+      color: honeydew;
+      text-align: center;
+      font-family: 'Domine', serif;
+      margin: 3% 40% 3% 40%;
+      text-align: center;
+      padding: 7px;
+      display: flex;
+      flex-flow: column; }
+    main .estilosEnvio {
+      background-color: #5f88a0;
+      color: honeydew;
+      text-align: center;
+      padding: 7px;
+      margin: 0 40% 0 40%; }
+    main .pagoEnvio {
+      margin: 20px;
+      line-height: 30px;
+      flex: 2%;
+      text-align: left; }
+    main div {
       text-align: left;
       margin-bottom: 10%;
       margin-left: 10%;
@@ -718,18 +352,50 @@
       height: 120px;
       padding-top: 10px;
       flex-basis: 10%; }
-    section img {
-      width: 200px;
-      height: 200px;
-      margin: 20px 20px 20px 20px; }
-    section form {
+    main .productos {
+      margin: 3% 19% 0 19%;
+      text-align: justify;
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: left;
-      margin-right: 87%;
-      margin-left: 5px; }
-
+      flex-direction: row;
+      justify-content: space-evenly;
+      font-size: 20px; }
+    main h1 {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      color: #5f88a0; }
+    main aside {
+      padding-bottom: 10px;
+      margin-left: 63%;
+      margin-right: 0;
+      width: 150px;
+      height: 0px; }
+    main button {
+      background-color: honeydew;
+      color: honeydew;
+      margin-left: 91%; }
+  footer {
+    background-image: linear-gradient(#78bfc8, #5f88a0);
+    text-align: center;
+    color: honeydew;
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none; }
+    footer .piePagina {
+      text-align: left;
+      flex: 2px;
+      width: 200px;
+      height: 240px;
+      margin: 30px 40px 20px 20px;
+      flex-basis: 10%;
+      text-decoration: none; }
+    footer ul li {
+      display: block;
+      color: honeydew;
+      margin: 10px 0 10px 0; }
+    footer ul a {
+      text-decoration: none; }
   nav {
     grid-area: nav;
     padding-left: 60px;
@@ -743,51 +409,19 @@
       list-style-type: none;
       overflow: hidden;
       padding: 0; }
-      nav ul li {
-        float: left;
-        margin: 10px; }
-        nav ul li a {
-          display: inline-block;
-          color: honeydew;
-          text-decoration: none; }
+    nav ul li {
+      float: left;
+      margin: 10px; }
+    nav ul li a {
+      display: inline-block;
+      color: honeydew;
+      text-decoration: none; }
     nav a {
       text-decoration: none; }
-
-  div iframe {
-    margin: 10px 10px 10px 38px;
-    width: 325px;
-    height: 250px; }
-
   div a {
     color: honeydew; }
-
-  p {
-    font-size: 15px;
-    margin: 10px 0 10px;
-    line-height: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left; }
-
-  aside{
-    padding-bottom: 10px;
-    margin-left:63% ;
-    margin-right: 0;
-    width: 150px;
-    height: 0px;
-  }
-  button{
-    background-color: honeydew;
-    color: honeydew;
-    margin-left: 91%;
-  }
-  .seccionProduc{
-    display: flex;
-  }
-
-  .dropdowni{
+  .seccionProduc {
+    display: flex; }
+  .dropdowni {
     width: 10px;
-    margin-right: 290px;
-  }
-  
-}
+    margin-right: 290px; } }
